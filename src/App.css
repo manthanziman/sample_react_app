@@ -1,0 +1,134 @@
+#root {
+  min-height: 100vh;
+}
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  padding: 24px;
+  place-items: center;
+  background: #f4c928;
+}
+
+.card {
+  width: min(100%, 390px);
+  padding: 36px;
+  border: 2px solid #111;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 8px 8px 0 #111;
+}
+
+.brand {
+  margin-bottom: 30px;
+  color: #111;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.brand span {
+  color: #e4b600;
+}
+
+h1 {
+  margin: 0;
+  color: #111;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.subtitle,
+.card > p:not(.error) {
+  margin: 8px 0 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  height: 43px;
+  padding: 0 11px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #111;
+  outline: 2px solid #f4c928;
+}
+
+.button {
+  min-height: 45px;
+  margin-top: 4px;
+  border: 2px solid #111;
+  border-radius: 6px;
+  background: #f4c928;
+  color: #111;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.button:hover:not(:disabled) {
+  background: #e9bd16;
+}
+
+.button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.switch-mode {
+  margin: 22px 0 0;
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+
+.switch-mode button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.error {
+  margin: 0 0 16px;
+  padding: 10px;
+  border: 1px solid #d88;
+  border-radius: 5px;
+  background: #fff1f1;
+  color: #9c2020;
+  font-size: 13px;
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding: 18px;
+  }
+
+  .card {
+    padding: 28px 23px;
+  }
+}
